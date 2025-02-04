@@ -43,7 +43,7 @@ p{
 }
 
 .main2{
-  width: 640px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -51,7 +51,7 @@ p{
 }
 
 .input-class{
-  width: 640px;
+  width: 100%;
   height: 56px;
   box-sizing: border-box;
   padding-left: 10px;
@@ -63,7 +63,7 @@ p{
 }
 
 .input-class1{
-  width: 640px;
+  width: 100%;
   height: 56px;
   padding-left: 10px;
   background-color: #F3F4F6;
@@ -76,6 +76,7 @@ p{
 .login-container{
   display: flex;
   border-color: #F3F4F6;
+  border: 2px solid #F3F4F6;
   background-color: #F3F4F6;
   border-radius: 12px;
   justify-content: space-around;
@@ -93,18 +94,24 @@ p{
 }
 
 .login-btn{
-  width: 640px;
+  width: 100%;
   height: 56px;
   background-color:#9CA3AF ;
   border-radius: 40px;
   border: none;
   font-size: 20px;
+  cursor: pointer;
   color: #F3F4F6;
 }
 
+.login-btn:hover{
+  background-color: #3692FF;
+}
+
+
 
 .easy-login{
-  width: 640px;
+  width: 100%;
   height: 74px;
   background-color: #E6F2FF;
   border: none;
@@ -116,8 +123,9 @@ p{
 }
 
 .goto-login{
-  width: 594px;
+  width: 100%;
   display: flex;
+  padding: 10px 10px;
   justify-content: space-between;
 }
 
