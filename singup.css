@@ -50,7 +50,7 @@ main {
   gap: 24px;
 }
 
-.input-class{
+.input-container{
   width: 640px;
   height: 56px;
   background-color: #F3F4F6;
@@ -63,19 +63,21 @@ main {
 }
 
 .member-input{
-  width: 592px;
+  width: 640px;
   height: 56px;
   background-color: #F3F4F6;
   font-size: 16px;
   border-radius: 12px;
+  padding-left: 10px;
   outline: none;
   border: none;
 }
 
 .member-input1{
-  width: 568px;
+  width: 640px;
   height: 56px;
   background-color: #F3F4F6;
+  padding-left: 10px;
   font-size: 16px;
   border-radius: 12px;
   outline: none;
@@ -85,6 +87,7 @@ main {
 .eye-icon{
   width: 24px;
   height: 24px;
+  padding-right: 10px;
 }
 
 .singup-btn{

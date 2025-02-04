@@ -20,7 +20,9 @@ p{
   font-family: Pretendard;
 }
 
-.main-head{
+
+
+.password-main-head .email-main-head{
   font-weight: bold;
 }
 
@@ -49,17 +51,10 @@ p{
 }
 
 .input-class{
-  width: 592px;
+  width: 640px;
   height: 56px;
-  background-color: #F3F4F6;
-  font-size: 16px;
-  border-radius: 12px;
-  outline: none;
-  border: none;
-}
-.input-class1{
-  width: 568px;
-  height: 56px;
+  box-sizing: border-box;
+  padding-left: 10px;
   background-color: #F3F4F6;
   font-size: 16px;
   border-radius: 12px;
@@ -67,17 +62,34 @@ p{
   border: none;
 }
 
-.login_input{
+.input-class1{
+  width: 640px;
+  height: 56px;
+  padding-left: 10px;
+  background-color: #F3F4F6;
+  font-size: 16px;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+}
+
+.login-container{
   display: flex;
   border-color: #F3F4F6;
   background-color: #F3F4F6;
   border-radius: 12px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
+
+.login-container:focus-within{
+  border: 2px solid #3692FF; 
+}
+
 .eye-icon{
   width: 24px;
   height: 24px;
+  padding-right: 10px;
 }
 
 .login-btn{
