@@ -8,24 +8,33 @@
     href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
   <link rel="stylesheet" href="panda_main.css">
   <title>판다마켓</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NWT6FHHFHB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-NWT6FHHFHB');
+  </script>
 </head>
 
 <body>
 
-  <header class="page-top">
+  <header id="page-header">
     <a class="logo" href="/">
       <img class="logoimg" src="img/Group 19.png">
     </a>
-    <a href="login.html"><button class="login">로그인</button></a>
+    <a href="login.html"><button id="login">로그인</button></a>
   </header>
 
   <main>
-    <div class="main-top">
+    <div id="main-top">
       <div class="main-top-content">
         <div class="main-tag">
           <p class="top-content">일상의 모든 물건을<br>거래해 보세요</p>
           <a href="/item">
-            <button class="goto-item">구경하러 가기</button>
+            <button id="goto-item">구경하러 가기</button>
           </a>
         </div>
         <img src="img/Img_home_top.png">
