@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" as="style" crossorigin
     href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-  <link rel="stylesheet" as="style" crossorigin href="https://noonnu.cc/font_page/849" />
   <link rel="stylesheet" href="login.css" />
   <title>로그인</title>
 </head>
@@ -22,23 +21,23 @@
         <div>
           <div class="email-container">
             <p class="email-main-head">이메일</p>
-            <div class="login-container">
-              <input id="member_login" name="email" class="input-class" placeholder="이메일을 입력해주세요" type="email">
-            </div>
+              <input id="email" name="email" class="input-class" placeholder="이메일을 입력해주세요" type="email">
+            <p id="email-error" style="color: red;"></p>
           </div>
         </div>
 
         <div>
           <div class="password">
             <p class="password-main-head">비밀번호</p>
-            <div class="login-container">
-              <input id="member_login" name="pw" class="input-class1" placeholder="비밀번호를 입력해주세요" type="password">
+            <div id="login-container" class="login-container">
+              <input id="password" name="pw" class="input-class1" placeholder="비밀번호를 입력해주세요" type="password">
               <img id="togglePassword" src="img/eye_button.png" alt="eye-icon" class="eye-icon">
             </div>
+            <p id="password-error" style="color: red;"></p>
           </div>
         </div>
 
-        <button class="login-btn">
+        <button id="loginBtn" class="login-btn" disabled>
           로그인
         </button>
 
@@ -63,7 +62,16 @@
 
     </div>
     <p class="foot">판다마켓이 처음이신가요? <a href="signup.html">회원가입</a></p>
+  
   </main>
-</body>
 
+  <div id="alert-modal" class="t" style="display: none;" >
+    <div class="alert-content">
+      <p id="alert-message">알림 메시지</p>
+      <button id="close-alert-btn">확인</button>
+    </div>
+  </div>
+  
+  <script src="login.js"></script>
+</body>
 </html>

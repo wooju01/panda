@@ -1,3 +1,30 @@
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+
+@media (min-width: 744px) and (max-width: 1199px) {
+  .container {
+    width: 100%;
+    padding: 0 16px;
+  }
+}
+
+
+@media (min-width: 375px) and (max-width: 743px) {
+  .container {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .element {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
 header{
   padding-left: 200px;
   padding-right: 200px;
@@ -18,6 +45,7 @@ footer{
 p{
   font-family: Pretendard;
   font-weight: bold;
+  font-size: 1rem;
   color: #374151;
 }
 
@@ -100,7 +128,7 @@ a{
   cursor: pointer;
 }
 
-.HotItem{
+.hot-Item{
   height: 720px;
   position: relative;
   display: flex;
