@@ -35,6 +35,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 #alert-message{
@@ -83,13 +84,16 @@ body {
 }
 
 main {
-  width: 640px;
+  max-width: 640px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   align-content: space-between;
   gap: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 p{
@@ -98,7 +102,7 @@ p{
 
 
 
-.password-main-head .email-main-head{
+.pmain-head{
   font-weight: bold;
 }
 
@@ -109,15 +113,16 @@ p{
 }
 
 
-.main1{
-  width: 640px;
+#main-body{
+  max-width: 640px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 24px;
 }
 
-.main2{
+#main-input{
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -125,7 +130,7 @@ p{
   gap: 24px;
 }
 
-.input-class{
+.input-email , .input-password{
   width: 100%;
   height: 56px;
   box-sizing: border-box;
@@ -137,17 +142,7 @@ p{
   border: none;
 }
 
-.input-class1{
-  width: 100%;
-  height: 56px;
-  padding-left: 10px;
-  background-color: #F3F4F6;
-  font-size: 16px;
-  border-radius: 12px;
-  outline: none;
-  border: none;
-}
-.input-class:focus{
+.input-email:focus{
   border: 2px solid #3692FF; /* 푸른색 테두리 */
 }
 
@@ -169,10 +164,11 @@ p{
 
 
 
-.eye-icon{
+#toggle-Password{
   width: 24px;
   height: 24px;
   padding-right: 10px;
+  cursor: pointer;
 }
 
 .login-btn{
@@ -196,7 +192,7 @@ p{
   cursor:auto
 }
 
-.easy-login{
+#easy-login{
   width: 100%;
   height: 74px;
   background-color: #E6F2FF;
@@ -208,14 +204,14 @@ p{
   gap: 10px;
 }
 
-.goto-login{
+#goto-login{
   width: 100%;
   display: flex;
   padding: 10px 10px;
   justify-content: space-between;
 }
 
-.img-goto{
+#img-goto{
   width: 100px;
   gap: 16px;
 }

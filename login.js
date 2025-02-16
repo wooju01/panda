@@ -4,7 +4,7 @@ const passwordInput = document.getElementById("password")
 const loginContainer = document.getElementById("login-container")
 const emailError = document.getElementById("email-error")
 const passwordError = document.getElementById("password-error")
-const togglePassword = document.getElementById("togglePassword")
+const togglePassword = document.getElementById("toggle-Password")
 
 const alertModal = document.getElementById("alert-modal")
 const alertMessage = document.getElementById("alert-message")
